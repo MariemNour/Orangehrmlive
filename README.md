@@ -13,13 +13,6 @@ Gradle
 # Design Patterns:
 Page object Models [POM]
 
-# Add environment vars (.env)
-```
-ORANGE_URL="https://opensource-demo.orangehrmlive.com/web/index.php"
-ORANGE_SEEDED_ADMIN_EMAIL="Admin"
-ORANGE_SEEDED_ADMIN_PASSWORD="admin123"
-```
-
 # Steps to Run Tests
 1- open terminal   
 2- run ``` gradle clean test ``` ## Tests should start running
