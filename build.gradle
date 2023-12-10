@@ -1,0 +1,47 @@
+apply plugin: 'java'
+
+
+repositories {
+  mavenCentral()
+}
+
+project.ext {
+  cucumberVersion = '5.6.0'
+}
+
+dependencies {
+  // Cucumber
+  testImplementation 'io.cucumber:cucumber-java:' + cucumberVersion
+  testImplementation 'io.cucumber:cucumber-junit:5.6.0'
+  // Selenium
+  implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.16.1'
+  implementation group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: '4.16.1'
+  // Web Driver
+  implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.5.0'
+  // Java Faker
+  implementation group: 'com.github.javafaker', name: 'javafaker', version: '1.0.2'
+  // Dotenv
+  implementation 'io.github.cdimascio:java-dotenv:5.2.2'
+  // Apache Commons Lang
+  //compile group: 'org.apache.commons', name: 'commons-text', version: '1.9'
+  implementation group: 'org.apache.commons', name: 'commons-text', version: '1.6'
+  // testng
+  testImplementation group: 'org.testng', name: 'testng', version: '7.6.1'
+}
+
+configurations {
+  cucumberRuntime {
+    extendsFrom testImplementation
+  }
+}
+
+task cucumber() {
+  dependsOn assemble, compileTestJava
+  doLast {
+    javaexec {
+      main = "io.cucumber.core.cli.Main"
+      classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+      args = ['--plugin', 'html:reports/test-report', '--plugin', 'pretty', '--glue', 'e2e', 'src/test/resources']
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="16.166">
+    <testcase classname="Check that Admin Can Create then Delete User" name="_2" time="16.108">
+        <system-out><![CDATA[Given admin user is logged in...............................................passed
+And admin navigate to system user page......................................passed
+And admin capture the number of records.....................................passed
+When admin clicks on add new user...........................................passed
+And admin enter valid user data.............................................passed
+And admin clicks on save button.............................................passed
+Then admin number of records increased by one...............................passed
+When admin searches with the username for the new user......................passed
+And admin delete the new user...............................................passed
+And admin reset filter......................................................passed
+Then number of records should be decreased by one...........................passed
+]]></system-out>
+    </testcase>
+</testsuite>

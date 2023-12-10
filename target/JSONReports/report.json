@@ -1,0 +1,187 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-12-10T22:39:08.488Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1006132749,
+              "status": "passed"
+            },
+            "match": {
+              "location": "e2e.stepsDefinitions.CreateAndDeleteUserSteps.browserSetup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 27109344,
+              "status": "passed"
+            },
+            "match": {
+              "location": "e2e.stepsDefinitions.CreateAndDeleteUserSteps.setUpData()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "",
+        "description": "",
+        "id": "check-that-admin-can-create-then-delete-user;",
+        "after": [
+          {
+            "result": {
+              "duration": 74348089,
+              "status": "passed"
+            },
+            "match": {
+              "location": "e2e.stepsDefinitions.CreateAndDeleteUserSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3401463134,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "admin user is logged in",
+            "match": {
+              "location": "e2e.stepsDefinitions.CreateAndDeleteUserSteps.admin_user_is_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2768180072,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "admin navigate to system user page",
+            "match": {
+              "location": "e2e.stepsDefinitions.CreateAndDeleteUserSteps.admin_navigate_to_system_user_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 598446135,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "admin capture the number of records",
+            "match": {
+              "location": "e2e.stepsDefinitions.CreateAndDeleteUserSteps.admin_capture_the_number_of_records()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 321481841,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "admin clicks on add new user",
+            "match": {
+              "location": "e2e.stepsDefinitions.CreateAndDeleteUserSteps.admin_clicks_on_add_new_user()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1720831113,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "admin enter valid user data",
+            "match": {
+              "location": "e2e.stepsDefinitions.CreateAndDeleteUserSteps.admin_enter_valid_user_data()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39490467,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "admin clicks on save button",
+            "match": {
+              "location": "e2e.stepsDefinitions.CreateAndDeleteUserSteps.admin_clicks_on_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4691555565,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "admin number of records increased by one",
+            "match": {
+              "location": "e2e.stepsDefinitions.CreateAndDeleteUserSteps.admin_number_of_records_increased_by_one()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 87199867,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "admin searches with the username for the new user",
+            "match": {
+              "location": "e2e.stepsDefinitions.CreateAndDeleteUserSteps.admin_searches_with_the_username_for_the_new_user()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 900099069,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "admin delete the new user",
+            "match": {
+              "location": "e2e.stepsDefinitions.CreateAndDeleteUserSteps.admin_delete_the_new_user()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39515920,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "admin reset filter",
+            "match": {
+              "location": "e2e.stepsDefinitions.CreateAndDeleteUserSteps.admin_reset_filter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 405387954,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "number of records should be decreased by one",
+            "match": {
+              "location": "e2e.stepsDefinitions.CreateAndDeleteUserSteps.number_of_records_should_be_decreased_by_one()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Check that Admin Can Create then Delete User",
+    "description": "",
+    "id": "check-that-admin-can-create-then-delete-user",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/e2e/CreateThanDeleteUser.feature",
+    "tags": []
+  }
+]
