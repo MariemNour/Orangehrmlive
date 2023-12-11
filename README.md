@@ -15,9 +15,5 @@ Gradle
 Page object Models [POM]
 
 # Steps to Run Tests
-Options 1: 
-1- Run test separetly from the TestRunner Class
-
-Option 2: 
 1- open terminal   
 2- run ``` gradle clean test ``` ## Tests should start running
