@@ -3,185 +3,96 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-12-10T22:39:08.488Z",
+        "start_timestamp": "2023-12-11T12:51:28.113Z",
         "before": [
           {
             "result": {
-              "duration": 1006132749,
+              "duration": 800224158,
               "status": "passed"
             },
             "match": {
-              "location": "e2e.stepsDefinitions.CreateAndDeleteUserSteps.browserSetup()"
+              "location": "api.stepsDefinitions.CreateCandidateSteps.browserSetup()"
             }
           },
           {
             "result": {
-              "duration": 27109344,
+              "duration": 553313778,
               "status": "passed"
             },
             "match": {
-              "location": "e2e.stepsDefinitions.CreateAndDeleteUserSteps.setUpData()"
+              "location": "api.stepsDefinitions.DeleteCandidateSteps.browserSetup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 100373959,
+              "status": "passed"
+            },
+            "match": {
+              "location": "api.stepsDefinitions.CreateCandidateSteps.setUpData()"
+            }
+          },
+          {
+            "result": {
+              "duration": 44633303,
+              "status": "passed"
+            },
+            "match": {
+              "location": "api.stepsDefinitions.DeleteCandidateSteps.setUpData()"
             }
           }
         ],
         "line": 3,
-        "name": "",
+        "name": "POST to candidate API",
         "description": "",
-        "id": "check-that-admin-can-create-then-delete-user;",
-        "after": [
-          {
-            "result": {
-              "duration": 74348089,
-              "status": "passed"
-            },
-            "match": {
-              "location": "e2e.stepsDefinitions.CreateAndDeleteUserSteps.tearDown()"
-            }
-          }
-        ],
+        "id": "verify-that-admin-user-can-add-candidate-to-candidate-api;post-to-candidate-api",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 3401463134,
+              "duration": 4660967920,
               "status": "passed"
             },
             "line": 4,
             "name": "admin user is logged in",
             "match": {
-              "location": "e2e.stepsDefinitions.CreateAndDeleteUserSteps.admin_user_is_logged_in()"
+              "location": "api.stepsDefinitions.CreateCandidateSteps.admin_user_is_logged_in()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2768180072,
+              "duration": 1290321566,
               "status": "passed"
             },
             "line": 5,
-            "name": "admin navigate to system user page",
+            "name": "post call api with valid data",
             "match": {
-              "location": "e2e.stepsDefinitions.CreateAndDeleteUserSteps.admin_navigate_to_system_user_page()"
+              "location": "api.stepsDefinitions.CreateCandidateSteps.post_call_api_with_valid_data()"
             },
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 598446135,
+              "duration": 1860316,
               "status": "passed"
             },
             "line": 6,
-            "name": "admin capture the number of records",
+            "name": "api response is 200OK",
             "match": {
-              "location": "e2e.stepsDefinitions.CreateAndDeleteUserSteps.admin_capture_the_number_of_records()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 321481841,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "admin clicks on add new user",
-            "match": {
-              "location": "e2e.stepsDefinitions.CreateAndDeleteUserSteps.admin_clicks_on_add_new_user()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1720831113,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "admin enter valid user data",
-            "match": {
-              "location": "e2e.stepsDefinitions.CreateAndDeleteUserSteps.admin_enter_valid_user_data()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 39490467,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "admin clicks on save button",
-            "match": {
-              "location": "e2e.stepsDefinitions.CreateAndDeleteUserSteps.admin_clicks_on_save_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4691555565,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "admin number of records increased by one",
-            "match": {
-              "location": "e2e.stepsDefinitions.CreateAndDeleteUserSteps.admin_number_of_records_increased_by_one()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 87199867,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "admin searches with the username for the new user",
-            "match": {
-              "location": "e2e.stepsDefinitions.CreateAndDeleteUserSteps.admin_searches_with_the_username_for_the_new_user()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 900099069,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "admin delete the new user",
-            "match": {
-              "location": "e2e.stepsDefinitions.CreateAndDeleteUserSteps.admin_delete_the_new_user()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 39515920,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "admin reset filter",
-            "match": {
-              "location": "e2e.stepsDefinitions.CreateAndDeleteUserSteps.admin_reset_filter()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 405387954,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "number of records should be decreased by one",
-            "match": {
-              "location": "e2e.stepsDefinitions.CreateAndDeleteUserSteps.number_of_records_should_be_decreased_by_one()"
+              "location": "api.stepsDefinitions.CreateCandidateSteps.api_response_is_200OK()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Check that Admin Can Create then Delete User",
+    "name": "Verify that admin user can Add candidate to candidate API",
     "description": "",
-    "id": "check-that-admin-can-create-then-delete-user",
+    "id": "verify-that-admin-user-can-add-candidate-to-candidate-api",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/e2e/CreateThanDeleteUser.feature",
+    "uri": "file:src/test/resources/api/CreateCandidateApi.feature",
     "tags": []
   }
 ]

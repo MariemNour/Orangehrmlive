@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Verify that admin user can Add candidate to candidate API" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-12-11T12:51:28" hostname="mariam-noureldin" time="7.517">
+  <properties/>
+  <testcase name="POST to candidate API" classname="Verify that admin user can Add candidate to candidate API" time="7.517"/>
+  <system-out><![CDATA[
+Scenario: POST to candidate API      # src/test/resources/api/CreateCandidateApi.feature:3
+  Given admin user is logged in      # api.stepsDefinitions.CreateCandidateSteps.admin_user_is_logged_in()
+  When post call api with valid data # api.stepsDefinitions.CreateCandidateSteps.post_call_api_with_valid_data()
+  Then api response is 200OK         # api.stepsDefinitions.CreateCandidateSteps.api_response_is_200OK()
+]]></system-out>
+  <system-err><![CDATA[SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+Dec 11, 2023 2:51:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 117
+Dec 11, 2023 2:51:28 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 117.0.5938.88. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Dec 11, 2023 2:51:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 117
+Dec 11, 2023 2:51:29 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 117.0.5938.88. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+</testsuite>

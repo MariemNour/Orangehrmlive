@@ -1,6 +1,6 @@
-Feature: Check that Admin Can Create then Delete User
+Feature: Verify that Admin Can Create then Delete User
 
-  Scenario:
+  Scenario: Admin Can Create then Delete User
     Given admin user is logged in
     And admin navigate to system user page
     And admin capture the number of records

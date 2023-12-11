@@ -23,6 +23,11 @@ public class TestDataHelper {
         return  faker.expression("#{regexify '[a-zA-Z0-9]{"+ length + "}'}");
     }
 
+    public String generateRandomEmail(){
+        Faker faker = new Faker();
+        return faker.internet().emailAddress();
+    }
+
     public String generateRandomPassword() {
         Integer Length = 8;
         RandomStringGenerator pwdGeneratorSpecialCharacter = new RandomStringGenerator.Builder().withinRange(ASCII_SPECIAL_CHAR_CASE_START, ASCII_SPECIAL_CHAR_CASE_END)

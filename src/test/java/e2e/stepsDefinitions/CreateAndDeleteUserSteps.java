@@ -1,6 +1,6 @@
 package e2e.stepsDefinitions;
 
-import e2e.BaseTest;
+import helpers.BaseURLs;
 import e2e.OrangeLoginPage;
 import e2e.OrangeUserManagementPage;
 import helpers.TestDataHelper;
@@ -18,7 +18,7 @@ import org.testng.Assert;
 
 import java.util.concurrent.TimeUnit;
 
-public class CreateAndDeleteUserSteps extends BaseTest {
+public class CreateAndDeleteUserSteps extends BaseURLs {
     WebDriver webDriver;
     OrangeLoginPage orangeLoginPage;
     OrangeUserManagementPage orangeUserManagementPage;
